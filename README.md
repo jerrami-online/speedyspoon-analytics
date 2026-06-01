@@ -80,4 +80,4 @@ Tikka Masala alone accounts for **31.7%** of total revenue.
 ---
 
 ## **7. SQL Queries**
-All queries used in this analysis are available in the [`queries/`](queries/) folder.
+All queries used in this analysis are available in the [`queries/`](jerrami-online/speedyspoon-analytics/queries) folder.
