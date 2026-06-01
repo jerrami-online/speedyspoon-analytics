@@ -1,4 +1,4 @@
-#  **SpeedySpoon – Data Analyst Case Study**
+#  **SpeedySpoon – Data Analyst Case Study (SQL)**
 
 ---
 
@@ -8,7 +8,7 @@
 ---
 
 ## **Tools Used**
-- **SQL**
+- **MySQL Workbench**
 
 ---
 
