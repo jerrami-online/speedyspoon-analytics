@@ -1,7 +1,4 @@
-# **SpeedySpoon – Data Analyst Case Study (SQL)**
-
-## **Role**
-**Data Analyst (Food Delivery Analytics)**
+# **SQL Case Study: Food Delivery Analytics**
 
 ## **Tools Used**
 - **MySQL Workbench**
