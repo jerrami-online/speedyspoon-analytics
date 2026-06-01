@@ -48,17 +48,17 @@ SpeedySpoon wants to answer:
 ### Revenue by Product
 **Tikka Masala** generates the highest total revenue, followed by Grilled Cheese and Chicken Parm.
 
-![Revenue by Product](screenshots/revenue_by_product.png)
+![Revenue by Product](results/revenue_by_product.png)
 
 ### Revenue Share by Product
 Tikka Masala alone accounts for **31.7%** of total revenue.
 
-![Revenue Share](screenshots/revenue_share_pct.png)
+![Revenue Share](results/revenue_share_pct.png)
 
 ### Reorder Rate by Product
 **Kale Smoothie** and **Banana Smoothie** have the highest reorder rates (1.0 and 0.97), indicating strong customer loyalty.
 
-![Reorder Rate by Product](screenshots/reorder_rate.png)
+![Reorder Rate by Product](results/reorder_rate.png)
 
 ---
 
