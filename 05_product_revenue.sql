@@ -12,3 +12,13 @@ from orders
 where name = 'kale-smoothie'
 group by 1
 order by 1;
+
+/*
+Revenue is aggregated by product name and sorted
+from highest to lowest performer.
+*/
+
+select name, round(sum(amount_paid), 2)
+from order_items
+group by name
+order by 2 desc;
