@@ -1,66 +1,86 @@
-#  **SpeedySpoon – Data Analyst Case Study (SQL)**
+# **SpeedySpoon – Data Analyst Case Study (SQL)**
 
----
-
-##  **Role**
+## **Role**
 **Data Analyst (Food Delivery Analytics)**
-
----
 
 ## **Tools Used**
 - **MySQL Workbench**
 
----
-
 ## **Focus Areas**
-- Product analytics  
-- Revenue analysis  
-- Customer behavior  
-- Product segmentation  
+- Product Performance
+- Revenue Analysis
+- Customer Behavior & Retention
+- Menu Optimization
 
 ---
 
-## 1. **Executive Summary**
+## **1. Executive Summary**
 
-This case study analyzes operational data from **SpeedySpoon**, a food delivery platform, to uncover insights about:
+This case study analyzes operational data from **SpeedySpoon**, a fictional food delivery platform. The goal was to identify top-performing products, understand revenue distribution, and uncover customer retention patterns to support menu strategy and growth decisions.
 
-- Order volume trends  
-- Revenue performance by product and category  
-- Customer purchase behavior  
-- Product-level retention (reorder rate)  
-
-> **Goal:** Support data-driven business decisions around menu optimization and customer retention strategy.
+**Key Highlights:**
+- **Tikka Masala** is the clear revenue leader
+- Smoothies show the highest customer loyalty (reorder rates)
+- Significant opportunity exists to bundle high-revenue items with high-retention products
 
 ---
 
-## 2. **Business Problem**
+## **2. Business Problem**
 
-SpeedySpoon wants to understand:
-
+SpeedySpoon wants to answer:
 - Which products drive the most revenue?
-- Which products generate repeat customers?
-- How should the menu be optimized for growth?
+- Which products generate the strongest customer loyalty?
+- How can the menu be optimized for maximum growth?
 
 ---
 
-## 3. **Data Sources**
+## **3. Data Sources**
 
-### `orders`
+### `orders` table
+- One row per order
+- Contains `order_id`, `ordered_at`, `delivered_to` (customer)
 
-Contains one row per customer order:
+### `order_items` table
+- One row per item purchased
+- Contains `order_id`, `product_name`, `amount_paid`
 
-- Order ID  
-- Timestamp (`ordered_at`)  
-- Customer identifier (`delivered_to`)  
+---
+
+## **4. Key Insights & Results**
+
+### Revenue by Product
+**Tikka Masala** generates the highest total revenue, followed by Grilled Cheese and Chicken Parm.
+
+![Revenue by Product](screenshots/revenue_by_product.png)
+
+### Revenue Share by Product
+Tikka Masala alone accounts for **31.7%** of total revenue.
+
+![Revenue Share](screenshots/revenue_share_pct.png)
+
+### Reorder Rate by Product
+**Kale Smoothie** and **Banana Smoothie** have the highest reorder rates (1.0 and 0.97), indicating strong customer loyalty.
+
+![Reorder Rate by Product](screenshots/reorder_rate.png)
 
 ---
 
-### `order_items`
+## **5. Key Observations**
 
-Contains one row per item purchased:
-
-- Order ID  
-- Product name  
-- Revenue per item (`amount_paid`)  
+- **Revenue Concentration**: The top 3 products (Tikka Masala, Grilled Cheese, Chicken Parm) drive over **73%** of total revenue.
+- **Retention vs Revenue Gap**: While Indian and American comfort foods dominate revenue, smoothies show much higher reorder rates.
+- **Opportunity**: Cross-selling or bundling high-revenue items with high-retention smoothies could significantly improve customer lifetime value.
 
 ---
+
+## **6. Recommendations**
+
+- Promote **smoothies** more aggressively (as sides, combos, or upsells).
+- Create combo meals featuring **Tikka Masala + Smoothie**.
+- Consider menu engineering: highlight high-margin, high-retention items.
+- Explore why smoothies have such high loyalty and replicate those success factors.
+
+---
+
+## **7. SQL Queries**
+All queries used in this analysis are available in the [`queries/`](queries/) folder.
