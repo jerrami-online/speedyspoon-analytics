@@ -1,36 +1,66 @@
-SQL Project: SpeedySpoon – Business Metrics Analysis 
+#  **SpeedySpoon – Data Analyst Case Study**
 
-Overview
+---
 
-This project analyzes transactional data from SpeedySpoon, a food delivery service.
-The goal is to extract actionable business insights from orders and order items data using SQL
+##  **Role**
+**Data Analyst (Food Delivery Analytics)**
 
-We focus on:
+---
 
-- Order volume trends
-- Revenue performance
-- Product-level profitability
-- Customer reorder behavior
-- Category-level segmentation
+## **Tools Used**
+- **SQL**
 
-Dataset
+---
 
-Two main tables are used:
+## **Focus Areas**
+- Product analytics  
+- Revenue analysis  
+- Customer behavior  
+- Product segmentation  
 
-orders:
+---
 
-- Each row represents a customer order
-- Includes timestamp and customer information
+## 1. **Executive Summary**
 
-order_items:
+This case study analyzes operational data from **SpeedySpoon**, a food delivery platform, to uncover insights about:
 
-- Each row represents an item within an order
-- Includes product name and revenue (amount_paid)
+- Order volume trends  
+- Revenue performance by product and category  
+- Customer purchase behavior  
+- Product-level retention (reorder rate)  
 
-Business Questions Answered
+> **Goal:** Support data-driven business decisions around menu optimization and customer retention strategy.
 
-- How many orders are placed over time?
-- How is revenue distributed daily?
-- Which products generate the most revenue?
-- What percentage of revenue comes from each product?
-- How can we categorize products into meaningful groups?
+---
+
+## 2. **Business Problem**
+
+SpeedySpoon wants to understand:
+
+- Which products drive the most revenue?
+- Which products generate repeat customers?
+- How should the menu be optimized for growth?
+
+---
+
+## 3. **Data Sources**
+
+### `orders`
+
+Contains one row per customer order:
+
+- Order ID  
+- Timestamp (`ordered_at`)  
+- Customer identifier (`delivered_to`)  
+
+---
+
+### `order_items`
+
+Contains one row per item purchased:
+
+- Order ID  
+- Product name  
+- Revenue per item (`amount_paid`)  
+
+---
